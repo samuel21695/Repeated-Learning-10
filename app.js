@@ -1,6 +1,6 @@
 function Pokemon(name, type) {
   let privateName = name;
-  let privateType = typs;
+  let privateType = type;
   
   return {
     getName: function() {
@@ -14,3 +14,9 @@ function Pokemon(name, type) {
     }
   };
 }
+
+const pikachu = Pokemon("피카츄", "전기");
+console.log(pikachu.getName()); // 피카츄
+console.log(pikachu.getType()); // 전기
+pikachu.setType("노말");
+console.log(pikachu.getType()); // 노말
